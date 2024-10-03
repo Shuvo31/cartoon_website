@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone App</title>
+    <link rel="stylesheet" href="day1.css">
+</head>
+<style>
+    /* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 250px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#logo img {
+    width: 120px;
+}
+
+#search input {
+    width: 250px;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0eeee;
+    outline: none;
+}
+
+#auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-button {
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0095f6;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-button.signup {
+    background-color: #ffffff;
+    color: #0095f6;
+}
+
+/* Profile Section */
+#profileDetails {
+    display: flex;
+    align-items: center;
+    padding: 30px 22%;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-header p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-actions button {
+    margin-right: 7px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0eeee;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 30px;
+}
+
+.profile-bio {
+    font-size: 14px;
+}
+
+/* Post Bar */
+.line {
+    width: 55%;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+}
+
+#postBar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #9b9b9b;
+}
+
+#postBar div:hover {
+    color: #262626;
+    cursor: pointer;
+}
+
+/* Post Grid */
+#postGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    padding: 20px 22%;
+    background-color: #fafafa;
+}
+
+.post img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+</style>
+<body>
+    <!-- Navbar -->
+    <div id="navbar">
+        <div id="logo"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="Instagram Logo">
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Search">
+        </div>
+        <div id="auth-buttons">
+            <button class="auth-button">Log In</button>
+            <button class="auth-button signup">Sign up</button>
+        </div>
+    </div>
+
+    <!-- Profile Details -->
+    <div id="profileDetails">
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <div class="profile-header">
+                <p>Shinchan</p>
+                <div class="profile-actions">
+                    <button class="profile_button">Follow</button>
+                    <button class="profile_button">Message</button>
+                </div>
+            </div>
+            <div class="profile-stats">
+                <div><strong>1,705</strong> posts</div>
+                <div><strong>270M</strong> followers</div>
+                <div><strong>302</strong> following</div>
+            </div>
+            <div class="profile-bio">
+                <p>Shinchan Nohara <br> Hii to you all!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post , status , tags bar -->
+    <hr class="line">
+    <div id="postBar">
+        <div>POSTS</div>
+        <div>REELS</div>
+        <div>TAGGED</div>
+    </div>
+
+    <!-- Post Grid -->
+    <div id="postGrid">
+        <div class="post"><img src="post1.jpg" alt="Post Image"></div>
+        <div class="post"><img src="post2.jpg" alt="Post Image"></div>
+        <div class="post"><img src="post3.jpg" alt="Post Image"></div>
+        <div class="post"><img src="post4.jpg" alt="Post Image"></div>
+        <div class="post"><img src="post5.jpg" alt="Post Image"></div>
+        <div class="post"><img src="post6.jpg" alt="Post Image"></div>
+    </div>
+</body>
+</html>

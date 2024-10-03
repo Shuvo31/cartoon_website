@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff4500;
+}
+
+p {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.cartoon-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cartoon {
+    width: 20%;
+    margin: 20px;
+    text-align: center;
+}
+
+.cartoon img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.cartoon img:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #008080;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+    </style>
+    <header>
+        <h1>Welcome to Cartoon World!</h1>
+        <p>Pick your favorite cartoon!</p>
+    </header>
+
+    <section class="cartoon-options">
+        <div class="cartoon">
+            <a href="Shinchan/Shinchan.html">
+                <img src="shinchan.jpg" alt="Shinchan">
+                <h2>Shinchan</h2>
+            </a>
+        </div>
+        <div class="cartoon">
+            <a href="tom&jerry/tom_jerry.html">
+                <img src="tom&jerry.jpg" alt="Tom & Jerry">
+                <h2>Tom & Jerry</h2>
+            </a>
+        </div>
+        <div class="cartoon">
+            <a href="Mikey_Mouse/Mikey_Mouse.html">
+                <img src="mikymouse.jpg" alt="Mickey Mouse">
+                <h2>Mickey Mouse</h2>
+            </a>
+        </div>
+        <div class="cartoon">
+            <a href="doremon/doremon.html">
+                <img src="doremon.jpg" alt="Doraemon">
+                <h2>Doraemon</h2>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Whizen's Cartoon World</p>
+    </footer>
+</body>
+</html>
